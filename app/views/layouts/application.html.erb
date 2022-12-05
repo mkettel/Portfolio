@@ -7,10 +7,11 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@1&f[]=gambetta@1&f[]=manrope@1&f[]=cabinet-grotesk@1&display=swap" rel="stylesheet">
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body><%= render "shared/navbar" %>
+  <body>
 <%= render "shared/flashes" %>
 
     <%= yield %>
