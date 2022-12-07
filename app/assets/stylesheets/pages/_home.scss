@@ -7,6 +7,8 @@ body {
   height: 100vh;
 }
 .nav-container {
+  // position: sticky;
+  // top: 0;
   p {
     color: $tan;
     font-family: $manrope;
@@ -114,7 +116,7 @@ body {
   display: flex;
   justify-content: center;
   .photo-1 {
-    transform: scale(1.1);
+    transform: scale(1.2);
     margin: 5px 25px;
     background-image: url(ski_me.png);
     background-size: contain;
@@ -124,8 +126,8 @@ body {
     width: 220px;
   }
   .photo-2 {
-    transform: scale(1.1);
-    margin: 5px 25px;
+    transform: scale(1.2);
+    margin: 5px 35px;
     background-image: url(cali_cliffs.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -134,7 +136,7 @@ body {
     width: 220px;
   }
   .photo-3 {
-    transform: scale(1.1);
+    transform: scale(1.2);
     margin: 5px 25px;
     background-image: url(central_park.png);
     background-size: contain;
@@ -145,14 +147,94 @@ body {
   }
 }
 .bottom-a {
+  margin-top: 15px;
   p {
     color: $tan;
     font-size: 22px;
   }
 }
+.arrow {
+  background-image: url(arrow.png);
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-items: end;
+}
 
 // Projects Section
-
-
+#project {
+  margin-top: 5%;
+  color: $tan;
+  height: 80vh;
+}
+.project-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 7%;
+    color: $tan;
+    text-align: center;
+    font-size: 16px;
+    font-family: $manrope;
+    font-weight: 300;
+  }
+}
+.project-content {
+  display: grid;
+  grid-template-rows: .2fr 1fr 1fr 1fr;
+}
+.table-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr .5fr;
+  border-bottom: 2px solid $tan;
+  margin-bottom: 20px;
+  font-weight: 350;
+  font-family: $manrope;
+}
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr .5fr;
+  a {
+    text-decoration: none;
+    color: $tan;
+  }
+}
 
 // Contact Section
+#contact {
+  margin-top: 7%;
+  color: $tan;
+  height: 60vh;
+}
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 7%;
+    color: $tan;
+    text-align: center;
+    font-size: 16px;
+    font-family: $manrope;
+    font-weight: 300;
+  }
+}
+.contact-content {
+  display: grid;
+  grid-template-rows: .2fr 1fr;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid $tan;
+  justify-items: center;
+  p {
+    font-weight: 600;
+  }
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-top: 5%;
+}
