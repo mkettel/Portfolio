@@ -6,22 +6,6 @@ body {
 .landing {
   height: 100vh;
 }
-.nav-container {
-  // position: sticky;
-  // top: 0;
-  p {
-    color: $tan;
-    font-family: $manrope;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px
-}
 // Name with small description
 .main-container {
   max-width: 1200px;
@@ -191,6 +175,10 @@ body {
   margin-bottom: 20px;
   font-weight: 350;
   font-family: $manrope;
+  h4 {
+    font-family: $manrope;
+    font-size: 22px;
+  }
 }
 .table-row {
   display: grid;

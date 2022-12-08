@@ -1,19 +1,13 @@
-<div class="nav-container">
-  <div class="nav-content">
-    <%= link_to "HOME", root_path %>
-    <a href="#project"><p>PROJECTS</p></a>
-    <a href="#contact"><p>CONTACT</p></a>
-  </div>
-</div>
+<%= render "shared/project_nav" %>
 
 <%# Project Container %>
 <div class="p-container">
+  <div class="project-name">
+    <h1>AVTECHDADDY</h1>
+  </div>
   <div class="p-content-container">
     <div class="left-content">
-      <div class="project-name">
-        <h1>AVTECHDADDY</h1>
-      </div>
-      <div class="project-content-profile" id="right-project">
+      <div class="project-content-profile" id="left-project">
         <div class="table-title-profile">
           <h5>TITLE</h5>
           <h5>GENRE</h5>
@@ -25,9 +19,65 @@
           <p>2022</p>
         </div>
       </div>
+      <div class="project-description">
+        <p>Created for Vail Health Hospital in Vail, Colorado. The site functions as
+        a knowledgebase for how to setup and use the various technological equipment
+        within their operating rooms. The hospital is world renown for othopedics, with many
+        of the doctors using different companies equipment, setting up the proper equipment
+        can be a challenge. That is what AVTECHDADDY was created to help out with.
+        </p>
+      </div>
     </div>
     <div class="right-content">
-      <%# image %>
+      <div class="screenshot-homepage">
+        <%= image_tag "techdaddy_homepage.png", class: "screenshot-homepage-image" %>
+      </div>
+      <div class="tools-used">
+        <%# <p>Languages:</p> %>
+        <p>HTML</p><span> ❘ </span>
+        <p>CSS</p><span> ❘ </span>
+        <p>JS</p>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="p-container">
+  <div class="second-section-content">
+    <div class="img-1">
+      <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
+    </div>
+    <div class="explaination">
+      <h2>STRUCTURE</h2>
+      <p>The site was structured to give the user the ability to either navigate directly to the
+      page desired through QR code scanning or they can navigate based on different categories:
+        <ul>
+          <li>Doctors</li>
+          <li>Vendors</li>
+          <li>Equipment</li>
+          <li>Settings/Other</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <%# Takeaway %>
+  <div class="takeaway-container">
+    <h2>TAKEAWAY</h2>
+    <p>This was the project that sparked my interest in becoming a developer. I discovered
+        how transformative it can be to utilize technology to help others do things that they
+        would not typically know how to do.
+    </p>
+  </div>
+</div>
+
+
+
+
+<%# FOOTER %>
+<div class="footer-container">
+  <div class="footer-content">
+    <%= link_to "Defit", defit_path, class: "project-link" %>
+    <div class="next-arrow"></div>
   </div>
 </div>
