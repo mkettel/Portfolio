@@ -1,0 +1,86 @@
+<%= render "shared/project_nav" %>
+
+<%# Project Container %>
+<div class="p-container">
+  <div class="project-name">
+    <h1>Defit</h1>
+  </div>
+  <div class="p-content-container">
+    <div class="left-content">
+      <div class="project-content-profile" id="left-project">
+        <div class="table-title-profile">
+          <h5>TITLE</h5>
+          <h5>GENRE</h5>
+          <h5>YEAR</h5>
+        </div>
+        <div class="table-row-profile">
+          <p>Defit</p>
+          <p>Web</p>
+          <p>2022</p>
+        </div>
+      </div>
+      <div class="project-description">
+        <p>Built with the Airbnb model in mind, this is an application that connects
+        those who have home gyms to those who are looking for a gym to train clients
+        or to train solo.
+        </p>
+        <p>My job for this project was to design the application and code in silo for any feature
+        that I was implementing. This is an ongoing project with the team I started with.
+        </p>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="screenshot-homepage">
+        <%= image_tag "techdaddy_homepage.png", class: "screenshot-homepage-image" %>
+      </div>
+      <div class="tools-used">
+        <%# <p>Languages:</p> %>
+        <p>HTML</p><span> ❘ </span>
+        <p>CSS</p><span> ❘ </span>
+        <p>JS</p><span> ❘ </span>
+        <p>Ruby</p><span> ❘ </span>
+        <p>Rails Framework</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-container">
+  <div class="second-section-content">
+    <div class="img-1">
+      <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
+    </div>
+    <div class="explaination">
+      <h2>STRUCTURE</h2>
+      <p>The site was structured to give the user the ability to either navigate directly to the
+      page desired through QR code scanning or they can navigate based on different categories:
+        <ul>
+          <li>Doctors</li>
+          <li>Vendors</li>
+          <li>Equipment</li>
+          <li>Settings/Other</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <%# Takeaway %>
+  <div class="takeaway-container">
+    <h2>TAKEAWAY</h2>
+    <p>This was the project that sparked my interest in becoming a developer. I discovered
+        how transformative it can be to utilize technology to help others do things that they
+        would not typically know how to do.
+    </p>
+  </div>
+</div>
+
+
+
+
+<%# FOOTER %>
+<div class="footer-container">
+  <div class="footer-content">
+    <%= link_to "Defit", defit_path, class: "project-link" %>
+    <div class="next-arrow"></div>
+  </div>
+</div>
