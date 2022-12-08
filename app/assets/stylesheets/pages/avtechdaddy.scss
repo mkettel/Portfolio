@@ -1,0 +1,55 @@
+body {
+  color: $tan;
+  font-family: $manrope;
+}
+.p-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+// Left Side Column content
+.p-content-container {
+  display: grid;
+  grid-template-columns: .8fr 1.1fr;
+  gap: 5%;
+}
+#right-project {
+  margin-top: 10%;
+}
+.project-name {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  h1 {
+    font-family: $manrope;
+    font-size: 78px;
+    font-weight: 500;
+  }
+}
+// little info thing
+.project-content-profile {
+  display: grid;
+  grid-template-rows: .2fr 1fr;
+}
+.table-title-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr .9fr;
+  border-bottom: 2px solid $tan;
+  margin-bottom: 20px;
+  font-weight: 350;
+  font-family: $manrope;
+  h5 {
+    font-size: 18px;
+  }
+}
+.table-row-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr .9fr;
+  a {
+    text-decoration: none;
+    color: $tan;
+    font-size: 16px;
+  }
+
+}
