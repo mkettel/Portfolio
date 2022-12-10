@@ -258,10 +258,8 @@ body {
       margin: 15px;
     }
   }
-  .top-a {
-    display: flex;
-    flex-direction: column;
-  }
+
+  // The the little lines a bit smaller for the mobile
   .left::before {
     content: '';
     position: absolute;
@@ -278,7 +276,41 @@ body {
     background-color: $tan;
     bottom: 12px;
   }
+  .top-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  // Image Size a bit smaller
   .right {
     margin-left: 5%;
+    height: 340px;
+    width: 390px;
+  }
+  #about {
+    margin-top: 10%;
+    margin: 20px;
+    width: 100%;
+  }
+  .about-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .bottom-a {
+    text-align: center;
+  }
+  #project {
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 30px;
+    height: auto;
+  }
+  #contact {
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 20px;
+    height: auto;
   }
 }
