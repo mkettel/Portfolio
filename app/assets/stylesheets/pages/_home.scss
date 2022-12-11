@@ -5,6 +5,7 @@ body {
 // Nav Bar Section
 .landing {
   height: 100vh;
+  padding: 0px 10px;
 }
 // Name with small description
 .main-container {
@@ -77,6 +78,8 @@ body {
 // About me section
 #about {
   margin-top: 5%;
+  padding: 0px 10px;
+
 }
 .about-container {
   max-width: 1100px;
@@ -150,6 +153,8 @@ body {
   margin-top: 5%;
   color: $tan;
   height: 80vh;
+  padding: 0px 10px;
+
 }
 .project-container {
   max-width: 1100px;
