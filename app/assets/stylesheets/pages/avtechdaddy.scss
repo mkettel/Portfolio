@@ -130,41 +130,7 @@ body {
   }
 }
 
-// FOOTER
-.footer-container {
-  display: flex;
-  justify-content: end;
-  padding: 20px;
-  margin-top: 10%;
-  transition: .4s;
-  .back-link {
-    transition: .4s;
-    &:hover {
-      transition: .4s;
-      transform: rotate(-6deg);
-    }
-  }
-  .forward-link {
-    transition: .4s;
-    &:hover {
-      transition: .4s;
-      transform: rotate(6deg);
-    }
-  }
-}
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .project-link {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-right: 20px;
-    font-size: 22px;
-    text-decoration: none;
-    color: $tan;
-  }
-}
+
 .next-arrow {
   background-image: url(next_arrow.png);
   background-size: contain;

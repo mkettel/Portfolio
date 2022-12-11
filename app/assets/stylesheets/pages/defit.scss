@@ -149,6 +149,13 @@ body {
       transform: rotate(6deg);
     }
   }
+  .fa-arrow-right {
+    font-size: 22px;
+  }
+  .fa-arrow-left {
+    font-size: 22px;
+  }
+
 }
 .footer-content-2 {
   display: flex;
@@ -156,17 +163,11 @@ body {
   .project-link {
     margin-bottom: 0;
     padding-bottom: 0;
-    padding: 0px 20px;
+    padding: 0px 10px;
     font-size: 22px;
     text-decoration: none;
     color: $tan;
   }
-}
-.next-arrow {
-  background-image: url(next_arrow.png);
-  background-size: contain;
-  width: 98px;
-  height: 50px;
 }
 
 // Iphone Media Queries
