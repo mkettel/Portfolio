@@ -330,6 +330,12 @@ body {
     width: 100%;
     height: auto;
   }
+  .table-title {
+    grid-template-columns: 1.2fr 1fr 1fr .5fr;
+  }
+  .table-row {
+    grid-template-columns: 1.2fr 1fr 1fr .5fr;
+  }
   #contact {
     margin-top: 20%;
     padding: 0px 15px;
