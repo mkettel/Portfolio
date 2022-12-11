@@ -306,8 +306,8 @@ body {
   }
   // Image Size a bit smaller
   #about {
-    margin-top: 10%;
-    // margin: 25px 20px;
+    margin-top: 20%;
+    margin-bottom: 10%;
     width: 100%;
   }
   .about-content {
@@ -325,11 +325,13 @@ body {
     }
   }
   #project {
+    margin-top: 20%;
     padding: 0px 15px;
     width: 100%;
     height: auto;
   }
   #contact {
+    margin-top: 20%;
     padding: 0px 15px;
     width: 100%;
     height: 20vh;
