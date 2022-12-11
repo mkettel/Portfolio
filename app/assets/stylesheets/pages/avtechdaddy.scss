@@ -167,3 +167,31 @@ body {
   width: 98px;
   height: 50px;
 }
+
+// Iphone Media Queries
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+  .project-name {
+    h1 {
+      font-size: 54px;
+    }
+  }
+  .p-content-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0%;
+    grid-template-columns: .9fr;
+    justify-content: center;
+
+  }
+  .second-section-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0%;
+    grid-template-columns: .8fr;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .takeaway-container {
+    margin: 25px 30px;
+  }
+}
