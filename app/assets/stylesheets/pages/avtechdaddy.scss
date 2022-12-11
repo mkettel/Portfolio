@@ -200,4 +200,15 @@ body {
   .takeaway-container {
     margin: 25px 25px;
   }
+  .footer-container {
+    &:hover {
+      box-shadow: inset 370px 0 0 0 $tan;
+      transition: .4s;
+      .project-link {
+        color: black;
+        transition-delay: .3s;
+        transform: scale(1.1);
+      }
+    }
+  }
 }
