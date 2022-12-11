@@ -278,7 +278,7 @@ body {
     content: '';
     position: absolute;
     height: 2px;
-    width: 410px;
+    width: 365px;
     background-color: $tan;
     bottom: 52px;
   }
@@ -286,7 +286,7 @@ body {
     content: '';
     position: absolute;
     height: 2px;
-    width: 410px;
+    width: 365px;
     background-color: $tan;
     bottom: 12px;
   }
@@ -297,14 +297,9 @@ body {
     gap: 40px;
   }
   // Image Size a bit smaller
-  .right {
-    margin-left: 5%;
-    height: 325px;
-    width: 370px;
-  }
   #about {
     margin-top: 10%;
-    margin: 25px 20px;
+    // margin: 25px 20px;
     width: 100%;
   }
   .about-content {
@@ -314,17 +309,18 @@ body {
   }
   .bottom-a {
     text-align: center;
+    p {
+      padding: 0px 15px;
+    }
   }
   #project {
-    margin: 0 auto;
+    padding: 0px 15px;
     width: 100%;
-    margin-left: 30px;
     height: auto;
   }
   #contact {
-    margin: 0 auto;
+    padding: 0px 15px;
     width: 100%;
-    margin-left: 20px;
-    height: auto;
+    height: 20vh;
   }
 }
