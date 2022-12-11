@@ -173,6 +173,7 @@ body {
   .project-name {
     h1 {
       font-size: 54px;
+      text-align: center;
     }
   }
   .p-content-container {
@@ -187,11 +188,11 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 0%;
-    grid-template-columns: .8fr;
+    grid-template-columns: .9fr;
     justify-content: center;
     margin-top: 10%;
   }
   .takeaway-container {
-    margin: 25px 30px;
+    margin: 25px 25px;
   }
 }
