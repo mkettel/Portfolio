@@ -314,6 +314,9 @@ body {
   }
   .bottom-a {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     p {
       padding: 0px 15px;
     }
