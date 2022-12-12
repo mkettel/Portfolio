@@ -166,7 +166,7 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
     padding: 0px 10px;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
     color: $tan;
   }
@@ -229,26 +229,18 @@ body {
   .takeaway-container {
     margin: 25px 25px;
   }
-  // .footer-container {
-  //   &:hover {
-  //     box-shadow: inset 370px 0 0 0 $tan;
-  //     transition: .4s;
-  //     .project-link {
-  //       color: black;
-  //       transition-delay: .3s;
-  //       transform: scale(1.1);
-  //     }
-  //     .fa-arrow-right {
-  //       color: black;
-  //       transition-delay: .4s;
-  //       transform: scale(1.2);
-  //     }
-  //   }
-  // }
   .back-link {
     &:hover {
       box-shadow: inset 370px 0 0 0 $tan;
       transition: .4s;
     }
+  }
+  .img-1 {
+    width: 350px;
+    height: 290px;
+  }
+  video {
+    width: 350px;
+    height: 290px;
   }
 }

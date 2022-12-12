@@ -22,7 +22,7 @@
     animation: colorchange .6s linear forwards, vanish .1s linear 1s forwards;
   }
   .line {
-    margin-left: 15px;
+    // margin-left: 15px;
   }
   .line::before {
     animation: grow .6s linear forwards, vanish .1s linear 1s forwards;
@@ -68,5 +68,23 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+
+// Iphone adjustment for the moving line with the loading animation
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+  .preloader {
+    .line::before {
+      animation: grow .6s linear forwards, vanish .1s linear 1s forwards;
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 0px;
+      background-color: $tan;
+      border-radius: 100%;
+      bottom: 45%;
+      left: 15%;
+    }
   }
 }

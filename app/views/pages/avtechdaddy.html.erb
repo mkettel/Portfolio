@@ -49,7 +49,9 @@
   <div class="second-section-content">
     <div class="img-1">
       <%# <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
-      <%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", :width=>601, :crop=>"scale", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name => "dwdfhpp4i") %>
+      <%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i", :transformation=>[
+    {:width=>601, :crop=>"scale"}
+  ]) %>
     </div>
     <div class="explaination">
       <h2>STRUCTURE</h2>
