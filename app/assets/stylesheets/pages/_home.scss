@@ -182,6 +182,8 @@ body {
   margin-bottom: 20px;
   font-weight: 350;
   font-family: $manrope;
+  padding: 5px;
+
   h4 {
     font-family: $manrope;
     font-size: 22px;
@@ -190,9 +192,14 @@ body {
 .table-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr .5fr;
+  padding: 5px;
+
   a {
     text-decoration: none;
     color: $tan;
+  }
+  &:hover {
+    background-color: #f6ebda1a;
   }
 }
 .fa-arrow-up-right {
