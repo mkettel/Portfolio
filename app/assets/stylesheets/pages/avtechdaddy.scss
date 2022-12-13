@@ -63,13 +63,22 @@ body {
     font-family: $manrope;
     margin-bottom: none;
   }
+  .site-links {
+    border-left: 2px solid $tan;
+    border-right: 2px solid $tan;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
   a {
     // margin-top: 5px;
     text-decoration: none;
     color: white;
     font-size: 18px;
-    // border-top: 2px dashed $tan;
-    // padding: 5px;
+    margin-bottom: 0px;
+    margin: 0px 30px;
+    // border-left: 2px solid $tan;
+    // border-right: 2px solid $tan;
   }
 }
 
@@ -153,6 +162,11 @@ body {
     h1 {
       font-size: 54px;
       text-align: center;
+    }
+  }
+  .project-description {
+    .a {
+      margin: 0px 10px;
     }
   }
   .p-content-container {
