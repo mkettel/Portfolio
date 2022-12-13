@@ -61,6 +61,15 @@ body {
   p {
     font-size: 16px;
     font-family: $manrope;
+    margin-bottom: none;
+  }
+  a {
+    // margin-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    // border-top: 2px dashed $tan;
+    // padding: 5px;
   }
 }
 

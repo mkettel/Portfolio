@@ -246,6 +246,10 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin-top: 5%;
+  a {
+    color: $tan;
+    text-decoration: none;
+  }
 }
 
 
