@@ -1,6 +1,9 @@
 body {
   color: $tan;
   font-family: $manrope;
+  p {
+    font-size: 18px;
+  }
 }
 .p-container {
   max-width: 1200px;
@@ -24,6 +27,7 @@ body {
 .p-content-container {
   display: grid;
   grid-template-columns: .8fr 1fr;
+  align-items: center;
   gap: 10%;
 }
 
@@ -59,7 +63,8 @@ body {
 .project-description {
   margin-top: 1%;
   p {
-    font-size: 16px;
+    font-size: 18px !important;
+    font-weight: 300;
     font-family: $manrope;
     margin-bottom: none;
   }
@@ -117,6 +122,7 @@ body {
   grid-template-columns: 1fr .8fr;
   gap: 10%;
   margin-top: 15%;
+  align-items: center;
 }
 .img-1 {
   // background-image: url(techdaddy_vendors.png);
@@ -134,6 +140,17 @@ body {
     font-size: 22px;
     text-align: center;
     margin-bottom: 18px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 300;
+
+  }
+  li {
+    font-size: 16px;
+    // font-weight: 300;
+
   }
 }
 
@@ -148,6 +165,11 @@ body {
     font-family: $manrope;
     font-size: 22px;
     margin-bottom: 18px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 300;
   }
 }
 
