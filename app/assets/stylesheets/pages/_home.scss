@@ -216,7 +216,7 @@ body {
 }
 #left-tilt {
   &:hover {
-    transform: translateX(10px) rotate(-1deg);
+    transform: translateX(-10px) rotate(-1deg);
     transition: .3s;
     background-color: #ebcfb2d1;
     border-radius: 10px;
@@ -265,6 +265,226 @@ body {
   a {
     color: $tan;
     text-decoration: none;
+    transition: .3s;
+
+    .letter {
+      display: inline-block;
+      transition: .3s;
+    }
+    .email-letter {
+      display: inline-block;
+      transition: .3s;
+    }
+    // wierd letter movement effect on hover for github
+    &:hover {
+      .letter:nth-child(1) {
+        transition: .3s;
+        transform: translateY(2px) translateX(-6px) rotate(2deg);
+        color: #DB4C40;
+      }
+      .letter:nth-child(2) {
+        transition: .3s;
+        transform: translateY(-2px) translateX(0px) rotate(-2deg);
+        color: #D6CBC1;
+      }
+      .letter:nth-child(3) {
+        transition: .3s;
+        transform: translateY(3px) translateX(1px) rotate(2deg);
+        color: #DB4C40;
+      }
+      .letter:nth-child(4) {
+        transition: .3s;
+        transform: translateY(-2px) translateX(5px) rotate(-2deg);
+        color: #009FB7;
+      }
+      .letter:nth-child(5) {
+        transition: .3s;
+        transform: translateY(2px) translateX(7px) rotate(2deg);
+        color: #DB4C40;
+      }
+      .letter:nth-child(6) {
+        transition: .3s;
+        transform: translateY(-3px) translateX(8px) rotate(-2deg);
+        color: #009FB7;
+      }
+      .letter:nth-child(7) {
+        transition: .3s;
+        transform: translateY(1px) translateX(17px) rotate(2deg);
+        color: #D6CBC1;
+      }
+
+      // Email letter
+      .email-letter:nth-child(1) {
+        transition: .3s;
+        transform: translateY(14px) translateX(1px) rotate(-6deg);
+        color: #009FB7;
+        transition-delay: .1s;
+      }
+      .email-letter:nth-child(2) {
+        transition: .3s;
+        transform: translateY(12px) translateX(2px) rotate(-8deg);
+        color: #009FB7;
+      }
+      .email-letter:nth-child(3) {
+        transition: .3s;
+        transform: translateY(10px) translateX(3px) rotate(-8deg);
+        color: #009FB7;
+        transition-delay: .2s;
+
+      }
+      .email-letter:nth-child(4) {
+        transition: .3s;
+        transform: translateY(8px) translateX(4px) rotate(-8deg);
+        color: #009FB7;
+        transition-delay: .4s;
+
+      }
+      .email-letter:nth-child(5) {
+        transition: .3s;
+        transform: translateY(7px) translateX(5px) rotate(-7deg);
+        color: #009FB7;
+      }
+      .email-letter:nth-child(6) {
+        transition: .3s;
+        transform: translateY(4px) translateX(6px) rotate(-6deg);
+        color: #009FB7;
+        transition-delay: .5s;
+      }
+      .email-letter:nth-child(7) {
+        transition: .3s;
+        transform: translateY(3px) translateX(7px) rotate(-5deg);
+        color: #009FB7;
+        transition-delay: .1s;
+      }
+      .email-letter:nth-child(8) {
+        transition: .3s;
+        transform: translateY(25px) translateX(-35px) rotate(-7deg);
+        color: #D6CBC1;
+        transition-delay: .1s;
+      }
+      .email-letter:nth-child(9) {
+        transition: .3s;
+        transform: translateY(23px) translateX(-32px) rotate(-6deg);
+        color: #D6CBC1;
+      }
+      .email-letter:nth-child(10) {
+        transition: .3s;
+        transform: translateY(21px) translateX(-30px) rotate(-6deg);
+        color: #D6CBC1;
+        transition-delay: .2s;
+      }
+      .email-letter:nth-child(11) {
+        transition: .3s;
+        transform: translateY(19px) translateX(-28px) rotate(-6deg);
+        color: #D6CBC1;
+        transition-delay: .3s;
+      }
+      .email-letter:nth-child(12) {
+        transition: .3s;
+        transform: translateY(17px) translateX(-26px) rotate(-6deg);
+        color: #D6CBC1;
+        transition-delay: .3s;
+      }
+      .email-letter:nth-child(13) {
+        transition: .3s;
+        transform: translateY(15px) translateX(-24px) rotate(-7deg);
+        color: #D6CBC1;
+        transition-delay: .3s;
+
+      }
+      .email-letter:nth-child(14) {
+        transition: .3s;
+        transform: translateY(13px) translateX(-22px) rotate(-7deg);
+        color: D6CBC1;
+        transition-delay: .3s;
+
+      }
+      .email-letter:nth-child(15) {
+        transition: .3s;
+        transform: translateY(11px) translateX(-20px) rotate(-7deg);
+        color: #D6CBC1;
+      }
+      .email-letter:nth-child(16) {
+        transition: .3s;
+        transform: translateY(9px) translateX(-18px) rotate(-7deg);
+        color: #D6CBC1;
+        transition-delay: .2s;
+
+      }
+      .email-letter:nth-child(17) {
+        transition: .3s;
+        transform: translateY(7px) translateX(-16px) rotate(-8deg);
+        color: #D6CBC1;
+        transition-delay: .3s;
+
+      }
+      .email-letter:nth-child(18) {
+        transition: .3s;
+        transform: translateY(27px) translateX(-55px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .1s;
+
+      }
+      .email-letter:nth-child(19) {
+        transition: .3s;
+        transform: translateY(25px) translateX(-54px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .2s;
+
+      }
+      .email-letter:nth-child(20) {
+        transition: .3s;
+        transform: translateY(23px) translateX(-53px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .4s;
+
+      }
+      .email-letter:nth-child(21) {
+        transition: .3s;
+        transform: translateY(20px) translateX(-52px) rotate(-6deg);
+        color: #DB4C40;
+        transition-delay: .3s;
+
+      }
+      .email-letter:nth-child(22) {
+        transition: .3s;
+        transform: translateY(19px) translateX(-51px) rotate(-7deg);
+        color: #DB4C40;
+      }
+      .email-letter:nth-child(23) {
+        transition: .3s;
+        transform: translateY(17px) translateX(-50px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .5s;
+
+      }
+      .email-letter:nth-child(24) {
+        transition: .3s;
+        transform: translateY(15px) translateX(-49px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .6s;
+
+      }
+      .email-letter:nth-child(25) {
+        transition: .3s;
+        transform: translateY(13px) translateX(-48px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .3s;
+
+      }
+      .email-letter:nth-child(26) {
+        transition: .3s;
+        transform: translateY(11px) translateX(-47px) rotate(-7deg);
+        color: #DB4C40;
+      }
+      .email-letter:nth-child(27) {
+        transition: .3s;
+        transform: translateY(9px) translateX(-46px) rotate(-7deg);
+        color: #DB4C40;
+        transition-delay: .1s;
+
+      }
+    }
   }
 }
 
@@ -372,5 +592,19 @@ body {
     padding: 0px 15px;
     width: 100%;
     height: 20vh;
+  }
+}
+
+
+
+// KEYFRAME ANIMATIONS
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
