@@ -208,7 +208,15 @@ body {
   &:hover {
     // background-color: #f6ebda1a;
     // box-shadow: inset 0px 0px 25px 20px #f6ebda12;
-    transform: translateX(10px);
+    transform: translateX(10px) rotate(1deg);
+    transition: .3s;
+    background-color: #ebcfb2d1;
+    border-radius: 10px;
+  }
+}
+#left-tilt {
+  &:hover {
+    transform: translateX(10px) rotate(-1deg);
     transition: .3s;
     background-color: #ebcfb2d1;
     border-radius: 10px;

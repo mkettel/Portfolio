@@ -8,17 +8,24 @@
   a {
     text-decoration: none;
     transition: .4s;
+    filter: blur(.05px);
     &:hover {
       color: white;
       letter-spacing: 1.1px;
       transition: .3s;
+      filter: none;
+    }
+    &:hover:not(:hover) {
+      filter: blur(3px);
     }
   }
 }
+
+
 .nav-content {
   display: flex;
   justify-content: space-between;
-  padding: 25px
+  padding: 25px;
 }
 @media only screen and  (min-width: 200px) and (max-width: 900px) {
   .nav-content {

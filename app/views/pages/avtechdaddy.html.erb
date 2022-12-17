@@ -8,7 +8,7 @@
   <div class="project-name">
     <h1>AVTECHDADDY</h1>
   </div>
-  <div class="p-content-container">
+  <div class="p-content-container" data-controller="image">
     <div class="left-content">
       <div class="project-content-profile" id="left-project">
         <div class="table-title-profile">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="right-content">
-      <div class="screenshot-homepage">
+      <div class="screenshot-homepage image">
         <%= image_tag "techdaddy_homepage.png", class: "screenshot-homepage-image" %>
       </div>
       <div class="tools-used">
@@ -46,7 +46,7 @@
 
 <div class="p-container">
   <div class="second-section-content">
-    <div class="img-1">
+    <div class="img-1 image">
       <%# <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
       <%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i", :transformation=>[
     {:width=>601, :crop=>"scale"}
