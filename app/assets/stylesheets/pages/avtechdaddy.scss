@@ -197,7 +197,7 @@ body {
   }
   .p-content-container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
     gap: 0%;
     grid-template-columns: .9fr;
     justify-content: center;
