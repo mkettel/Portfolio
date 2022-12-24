@@ -19,4 +19,8 @@ class PagesController < ApplicationController
   def filmyj
   end
 
+  def show_pdf
+    send_file 'Matthew Kettelkamp Resume.pdf', type: 'application/pdf', disposition: 'inline'
+  end
+
 end

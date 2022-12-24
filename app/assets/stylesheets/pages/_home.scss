@@ -250,7 +250,7 @@ body {
 }
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 2px solid $tan;
   justify-items: center;
   p {
@@ -259,7 +259,7 @@ body {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin-top: 5%;
   a {
