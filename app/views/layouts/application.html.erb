@@ -12,7 +12,8 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <script src="https://kit.fontawesome.com/9366535fbb.js" crossorigin="anonymous"></script>
     <%# analytics tag for the pages %>
-    <!-- Google tag (gtag.js) -->
+  </head>
+   <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTL84ZLF06"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,7 +22,6 @@
 
       gtag('config', 'G-BTL84ZLF06');
     </script>
-  </head>
 
   <body>
 <%= render "shared/flashes" %>
