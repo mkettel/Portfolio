@@ -1,0 +1,90 @@
+
+// Loading page gif
+.preloader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  transform: opacity 1s linear;
+  h1 {
+    color: black;
+    font-size: 54px;
+    animation: colorchange .6s linear forwards, vanish .1s linear 1s forwards;
+  }
+  .line {
+    // margin-left: 15px;
+  }
+  .line::before {
+    animation: grow .6s linear forwards, vanish .1s linear 1s forwards;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0px;
+    background-color: $tan;
+    border-radius: 100%;
+    bottom: 45%;
+    left: 40%;
+  }
+}
+@keyframes vanish {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes grow {
+  0% {
+    width: 1px;
+  }
+  100% {
+    width: 270px;
+  }
+}
+@keyframes colorchange {
+  0% {
+    color: black;
+    // transform: rotate(180deg);
+  }
+  100% {
+    // transform: rotate(0deg);
+    color: $tan;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+// Iphone adjustment for the moving line with the loading animation
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+  .preloader {
+    .line::before {
+      animation: grow .6s linear forwards, vanish .1s linear 1s forwards;
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 0px;
+      background-color: $tan;
+      border-radius: 100%;
+      bottom: 45%;
+      left: 15%;
+    }
+  }
+}

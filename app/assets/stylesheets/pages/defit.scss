@@ -1,0 +1,246 @@
+
+
+body {
+  color: $tan;
+  font-family: $manrope;
+}
+.p-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// Title
+.project-name {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;
+  // align-items: flex-end;
+  h1 {
+    text-align: start;
+    font-family: $manrope;
+    font-size: 78px;
+    font-weight: 500;
+  }
+}
+// Left Side Column content
+.p-content-container {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+  gap: 10%;
+}
+
+// little info thing
+#left-project {
+  margin-top: 10%;
+}
+.project-content-profile {
+  display: grid;
+  grid-template-rows: .2fr 1fr;
+}
+.table-title-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr .9fr;
+  border-bottom: 2px solid $tan;
+  margin-bottom: 20px;
+  font-weight: 350;
+  font-family: $manrope;
+  h5 {
+    font-family: $manrope;
+    font-size: 22px;
+  }
+}
+.table-row-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr .9fr;
+  a {
+    text-decoration: none;
+    color: $tan;
+    font-size: 16px;
+  }
+}
+.project-description {
+  margin-top: 1%;
+  p {
+    font-size: 16px;
+    font-family: $manrope;
+  }
+}
+
+
+// RIGHT SIDE SCREENSHOTS
+.right-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: flex-end;
+}
+.screenshot-homepage-image {
+  background-size: cover;
+  height: 290px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 1px white;
+}
+.tools-used {
+  margin-top: 3%;
+  display: flex;
+  p {
+    margin: 0px 20px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+
+// second section
+.second-section-content {
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 10%;
+  margin-top: 15%;
+}
+.img-1 {
+  // background-image: url(techdaddy_vendors.png);
+  background-size: cover;
+  height: 290px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+
+}
+.explaination {
+  h2 {
+    font-family: $manrope;
+    // font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+}
+
+// TAKEAWAY
+.takeaway-container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 15%;
+
+  h2 {
+    text-align: center;
+    font-family: $manrope;
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+}
+
+// FOOTER
+.footer-container-2 {
+  padding: 20px;
+  margin-top: 10%;
+  transition: .4s;
+  .back-link {
+    transition: .4s;
+    &:hover {
+      transition: .4s;
+      transform: rotate(-6deg);
+    }
+  }
+  .forward-link {
+    transition: .4s;
+    &:hover {
+      transition: .4s;
+      transform: rotate(6deg);
+    }
+  }
+  .fa-arrow-right {
+    font-size: 22px;
+  }
+  .fa-arrow-left {
+    font-size: 22px;
+  }
+
+}
+.footer-content-2 {
+  display: flex;
+  justify-content: space-between;
+  .project-link {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 0px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: $tan;
+  }
+}
+
+// Iphone Media Queries
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+  .project-name {
+    h1 {
+      font-size: 54px;
+      text-align: center;
+    }
+  }
+  .p-content-container {
+    display: grid;
+    grid-template-rows: .5fr .5fr;
+    gap: 0%;
+    grid-template-columns: .9fr;
+    justify-content: center;
+    #left-project {
+      width: 390px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 25px 15px;
+    }
+    .project-description {
+      margin: 0 auto;
+      padding: 25px 15px;
+      width: 390px;
+    }
+
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    .screenshot-homepage-image {
+      height: 290px;
+      width: 350px;
+    }
+    .tools-used {
+      flex-wrap: wrap;
+    }
+  }
+
+  .second-section-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0%;
+    grid-template-columns: .9fr;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .explaination {
+    h2 {
+      margin-top: 10%;
+    }
+  }
+  .takeaway-container {
+    margin: 25px 25px;
+  }
+  .back-link {
+    &:hover {
+      box-shadow: inset 370px 0 0 0 $tan;
+      transition: .4s;
+    }
+  }
+  .img-1 {
+    width: 350px;
+    height: 290px;
+  }
+  video {
+    width: 350px;
+    height: 290px;
+  }
+}

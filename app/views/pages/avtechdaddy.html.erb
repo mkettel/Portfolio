@@ -1,0 +1,91 @@
+<%# loading animation %>
+<%= render "shared/preloader" %>
+<%# navbar %>
+<%= render "shared/project_nav" %>
+
+<%# Project Container %>
+<div class="p-container">
+  <div class="project-name">
+    <h1>AVTECHDADDY</h1>
+  </div>
+  <div class="p-content-container" data-controller="image">
+    <div class="left-content">
+      <div class="project-content-profile" id="left-project">
+        <div class="table-title-profile">
+          <h5>TITLE</h5>
+          <h5>GENRE</h5>
+          <h5>YEAR</h5>
+        </div>
+        <div class="table-row-profile">
+          <p>AVTECHDADDY</p>
+          <p>Web</p>
+          <p>2022</p>
+        </div>
+      </div>
+      <div class="project-description">
+        <p>AVTECHDADDY was developed for Vail Health Hospital, a world-renowned institution located in Vail, Colorado, renowned for its expertise in orthopedics. The platform serves as a comprehensive resource for setting up and using the various technological equipment in the hospital's operating rooms. With doctors at the hospital using equipment from a range of different companies, ensuring proper setup can be a complex task. AVTECHDADDY was designed to streamline this process and provide a reliable, easy-to-use tool for hospital staff.
+        </p>
+        <div class="site-links">
+          <a href="https://github.com/mkettel/AV-TECHDADDY" target="_blank">Github Repository <i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="screenshot-homepage image">
+        <%= image_tag "techdaddy_homepage.png", class: "screenshot-homepage-image" %>
+      </div>
+      <div class="tools-used">
+        <%# <p>Languages:</p> %>
+        <p>HTML</p><span> ❘ </span>
+        <p>CSS</p><span> ❘ </span>
+        <p>JS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-container">
+  <div class="second-section-content">
+    <div class="img-1 image">
+      <%# <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
+      <%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i", :transformation=>[
+    {:width=>601, :crop=>"scale"}
+  ]) %>
+    </div>
+    <div class="explaination">
+      <h2>STRUCTURE</h2>
+      <p>Users have the option to navigate through the site by scanning QR codes located in the operating rooms or by selecting from the following four main categories:
+        <ul>
+          <li><strong>Doctors:</strong> Provides information about the medical professionals who work in the operating rooms.</li>
+          <li><strong>Vendors:</strong> Lists the companies that supply the operating rooms with necessary products and services.</li>
+          <li><strong>Equipment: </strong>Details the various types of equipment used in the operating rooms.</li>
+          <li><strong>Settings/Other: </strong>Includes information about settings and any additional information that does not fit into the other categories.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <%# Takeaway %>
+  <div class="takeaway-container">
+    <h2>TAKEAWAY</h2>
+    <p>This project sparked my interest in becoming a developer and showed me the transformative power of technology. By using HTML and CSS, I developed a strong foundation in front-end development and learned how essential the design of a website or application is. I fell in love with CSS and am now eager to continue learning and growing my skills, particularly in JavaScript and back-end development. Working on this project showed me how I can use my skills to help others accomplish tasks they might not have known how to do otherwise.
+    </p>
+  </div>
+</div>
+
+
+
+
+<%# FOOTER %>
+<div class="footer-container-2">
+  <div class="footer-content-2">
+    <div class="back-link">
+      <i class="fa-solid fa-arrow-left"></i>
+      <%= link_to "HOME", root_path, class: "project-link" %>
+    </div>
+    <div class="forward-link">
+      <%= link_to "Defit.", defit_path, class: "project-link" %>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+</div>

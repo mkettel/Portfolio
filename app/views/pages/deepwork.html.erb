@@ -1,0 +1,88 @@
+<%# Loader %>
+<%= render "shared/preloader" %>
+
+<%# Navbar %>
+<%= render "shared/project_nav" %>
+
+<%# Project Container %>
+<div class="p-container">
+  <div class="project-name">
+    <h1>Deepwork.</h1>
+  </div>
+  <div class="p-content-container">
+    <div class="left-content">
+      <div class="project-content-profile" id="left-project">
+        <div class="table-title-profile">
+          <h5>TITLE</h5>
+          <h5>GENRE</h5>
+          <h5>YEAR</h5>
+        </div>
+        <div class="table-row-profile">
+          <p>Deeepwork.</p>
+          <p>Web</p>
+          <p>2022</p>
+        </div>
+      </div>
+      <div class="project-description">
+        <p>Deepwork is a productivity tool that helps people stay focused and increase their productivity by providing a structured environment for working on tasks. To use Deepwork, users can create an account and start a deepwork session. These sessions can be customized in terms of duration and can be used for studying or working on any subject. Deepwork helps users track the time they spend on a task and stay focused to get things done more efficiently.
+        </p>
+        <div class="site-links">
+          <a href="https://github.com/SkiltonJ/Deepwork." target="_blank">Github Repository <i class="fa-brands fa-github" id="icon"></i></a>
+          <br>
+          <a href="http://www.deepwork.pro/" target="_blank">Application Link <i class="fa-solid fa-arrow-turn-up" id="icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="screenshot-homepage">
+        <%= image_tag "deepwork.png", class: "screenshot-homepage-image" %>
+      </div>
+      <div class="tools-used">
+        <%# <p>Languages:</p> %>
+        <p>HTML</p><span> ❘ </span>
+        <p>CSS</p><span> ❘ </span>
+        <p>JS</p><span> ❘ </span>
+        <p>Ruby</p><span> ❘ </span>
+        <p>Rails Framework</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-container">
+  <div class="second-section-content">
+    <div class="img-1">
+      <%= image_tag "Deepwork_session.png", class: "img-1" %>
+    </div>
+    <div class="explaination">
+      <h2>STRUCTURE</h2>
+      <p>Deepwork has a profile page that acts as a dashboard for users to view their stats from previous sessions and select their desired study templates for upcoming deepwork sessions. Users will soon be able to add friends and start group sessions or chat with them about various subjects. The profile page provides a convenient place for users to access all of their information and manage their deepwork sessions.
+      </p>
+    </div>
+  </div>
+
+  <%# Takeaway %>
+  <%# <div class="takeaway-container">
+    <h2>TAKEAWAY</h2>
+    <p>This project taught me the value of working in a team. Using project management and design tools like trello
+    and figma,
+    </p>
+  </div> %>
+</div>
+
+
+
+
+<%# FOOTER %>
+<div class="footer-container-2">
+  <div class="footer-content-2">
+    <div class="back-link">
+      <i class="fa-solid fa-arrow-left"></i>
+      <%= link_to "Defit.", defit_path, class: "project-link" %>
+    </div>
+    <div class="forward-link">
+      <%= link_to "Filmy-j", filmyj_path, class: "project-link" %>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+</div>

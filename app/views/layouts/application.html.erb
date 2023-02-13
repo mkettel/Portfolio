@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Full stack web developer with a passion for creative and intuitive technology">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@1&f[]=gambetta@1&f[]=manrope@1&f[]=cabinet-grotesk@1&display=swap" rel="stylesheet">
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <script src="https://kit.fontawesome.com/9366535fbb.js" crossorigin="anonymous"></script>
+    <%# analytics tag for the pages %>
+  </head>
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTL84ZLF06"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BTL84ZLF06');
+    </script>
+
+  <body>
+<%= render "shared/flashes" %>
+
+    <%= yield %>
+  </body>
+</html>

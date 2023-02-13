@@ -1,0 +1,20 @@
+.nav-container-project {
+  position: sticky;
+  top: 0;
+}
+.nav-link-project {
+  color: $tan;
+  text-decoration: none;
+  font-size: 22px;
+  transition: .3s;
+
+  &:hover {
+    color: white;
+    transition: .3s;
+    letter-spacing: 1.2px;
+  }
+}
+.nav-project-page {
+  text-align: end;
+  padding: 20px;
+}
