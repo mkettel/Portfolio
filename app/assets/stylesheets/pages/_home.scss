@@ -4,15 +4,15 @@ body {
 }
 // Nav Bar Section
 .landing {
-  height: 100vh;
+  height: 90vh;
   padding: 0px 10px;
 }
 // Name with small description
 .main-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  margin-top: 3%;
-  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
   h1 {
     font-size: 62px;
     color: $tan;
@@ -30,14 +30,15 @@ body {
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
   position: relative;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 3%;
   .left {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    gap: 40px;
     color: $tan;
     align-items: end;
     justify-items: flex-start;
@@ -74,6 +75,30 @@ body {
   bottom: 12px;
 }
 
+// -----Skills Section-------
+.skills-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-top: 2px solid $tan;
+  padding: 60px 0px;
+  margin-top: 3%;
+  .column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    h3 {
+      font-family: $manrope;
+    }
+    p {
+      font-size: 16px;
+      color: $sec-letters;
+      font-family: $manrope;
+      font-weight: 300;
+    }
+  }
+}
+
+
 
 // About me section
 #about {
@@ -88,7 +113,7 @@ body {
     margin-bottom: 7%;
     color: $tan;
     text-align: center;
-    font-size: 16px;
+    font-size: 28px;
     font-family: $manrope;
     font-weight: 300;
   }
@@ -166,7 +191,7 @@ body {
     margin-bottom: 7%;
     color: $tan;
     text-align: center;
-    font-size: 16px;
+    font-size: 28px;
     font-family: $manrope;
     font-weight: 300;
   }
