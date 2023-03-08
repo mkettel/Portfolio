@@ -633,9 +633,14 @@ body {
   }
   // Image Size a bit smaller
   #about {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
+  }
+  .about-container {
+    h2 {
+      text-align: center;
+    }
   }
   .about-content {
     display: grid;
@@ -651,11 +656,27 @@ body {
       padding: 0px 15px;
     }
   }
+  // ------- SKILLS SECTION------------
+  .skills-section {
+    margin-top: 50%;
+    // padding: 0px 15px;
+    width: 90%;
+    height: auto;
+    .column-container {
+      gap: 12px;
+      width: 100%;
+    }
+  }
   #project {
     margin-top: 20%;
     padding: 0px 15px;
     width: 100%;
     height: auto;
+  }
+  .project-container {
+    h2 {
+      text-align: center;
+    }
   }
   .table-title {
     grid-template-columns: 1.2fr 1fr 1fr .5fr;
