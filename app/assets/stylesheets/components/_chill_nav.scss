@@ -1,0 +1,19 @@
+.navbar-chill {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  // margin: 20px;
+  .nav-icon {
+    margin: 10px 20px;
+    a {
+      font-size: 28px;
+      color: $sec-letters;
+      transition: .3s;
+      &:hover {
+        color: $tan;
+        transition: .3s;
+      }
+    }
+  }
+}
