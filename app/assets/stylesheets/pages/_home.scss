@@ -178,11 +178,12 @@ body {
   }
 }
 .arrow {
+  display: none;
   background-image: url(arrow.png);
   background-size: contain;
   height: 150px;
   width: 150px;
-  display: flex;
+  // display: flex;
   justify-items: end;
 }
 
@@ -260,20 +261,20 @@ body {
   color: $tan;
 }
 
-// Contact Section
+// -------Contact Section
 #contact {
   margin-top: 7%;
   color: $tan;
   height: 60vh;
 }
 .contact-container {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   h2 {
     margin-bottom: 7%;
     color: $tan;
-    text-align: center;
-    font-size: 16px;
+    text-align: start;
+    font-size: 62px;
     font-family: $manrope;
     font-weight: 300;
   }
