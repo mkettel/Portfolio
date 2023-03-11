@@ -1,5 +1,39 @@
 
 
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  .project-display {
+    .screenshot {
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      margin: 0px;
+    }
+    .languages {
+      font-size: 16px;
+      color: $sec-letters;
+      margin-top: 5px;
+      span {
+        margin: 0px 5px;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 // Projects Section GRID
 #project-g {
   margin-top: 5%;
