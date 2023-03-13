@@ -1,0 +1,73 @@
+// Projects Section
+#project {
+  margin-top: 5%;
+  color: $tan;
+  height: 70vh;
+  padding: 0px 10px;
+}
+.project-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 6%;
+    color: $tan;
+    text-align: start;
+    font-size: 62px;
+    font-family: $manrope;
+    font-weight: 300;
+  }
+}
+.project-content {
+  display: grid;
+  grid-template-rows: .2fr 1fr 1fr 1fr 1fr;
+}
+.table-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr ;
+  border-bottom: 2px solid $tan;
+  margin-bottom: 20px;
+  font-weight: 350;
+  font-family: $manrope;
+  padding: 5px;
+  justify-items: center;
+
+  h4 {
+    font-family: $manrope;
+    font-size: 22px;
+  }
+}
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  padding: 5px;
+  transition: .3s;
+  justify-items: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $tan;
+  }
+  p {
+    margin-bottom: 0px;
+
+  }
+  &:hover {
+    // background-color: #f6ebda1a;
+    // box-shadow: inset 0px 0px 25px 20px #f6ebda12;
+    transform: translateX(10px) rotate(1deg);
+    transition: .3s;
+    background-color: #ebcfb2d1;
+    border-radius: 10px;
+  }
+}
+#left-tilt {
+  &:hover {
+    transform: translateX(-10px) rotate(-1deg);
+    transition: .3s;
+    background-color: #ebcfb2d1;
+    border-radius: 10px;
+  }
+}
+.fa-arrow-up-right {
+  color: $tan;
+}
