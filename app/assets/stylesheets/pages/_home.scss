@@ -103,7 +103,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  pointer-events: none;
+  // Hover opacity effect
+  &:hover {
+    .project-display:not(:hover) {
+      opacity: .7;
+      transition: .3s;
+    }
+  }
   .project-display {
+    pointer-events: auto;
+    transition: opacity 300ms;
     .screenshot {
       background-size: cover;
       height: 300px;
@@ -126,7 +136,6 @@ body {
       text-decoration: none;
       span {
         margin: 0px 5px;
-
       }
     }
   }
