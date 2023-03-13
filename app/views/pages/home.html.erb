@@ -52,58 +52,36 @@
 </section>
 
 <%# Project Section %>
-<section id="project">
-  <div class="project-container">
+<section id="project-g">
+  <div class="project-container-g">
     <h2>PROJECTS</h2>
-    <div class="project-content">
-      <div class="table-title">
-        <h4>TITLE</h4>
-        <h4>GENRE</h4>
-        <h4>YEAR</h4>
-        <h4></h4>
+    <div class="project-grid">
+      <div class="project-display">
+      <%= link_to filmyj_path do %>
+        <%= image_tag "filmyj_homepage.png", class: "screenshot" %>
+        <p class="subtitle">Film Photography Journal</p>
+        <p class="languages">HTML <span>|</span> SCSS <span>|</span> JS <span>|</span> Ruby <span>|</span> Rails</p>
+      <% end %>
       </div>
-      <div class="table-row">
-        <%= link_to avtechdaddy_path do %>
-          <p>AVTECHDADDY</p>
-        <% end %>
-        <%= link_to avtechdaddy_path do %>
-          <p>Web</p>
-        <% end %>
-        <%= link_to avtechdaddy_path do %>
-          <p>2022</p>
+      <div class="project-display">
+      <%= link_to deepwork_path do %>
+        <%= image_tag "deepwork.png", class: "screenshot" %>
+        <p class="subtitle">Productivity Environment Builder / Tracker</p>
+        <p class="languages">HTML <span>|</span> SCSS <span>|</span> JS <span>|</span> Ruby <span>|</span> Rails</p>
         <% end %>
       </div>
-      <div class="table-row" id="left-tilt">
-        <%= link_to defit_path do %>
-          <p>Defit</p>
-        <% end %>
-        <%= link_to defit_path do %>
-          <p>Web</p>
-        <% end %>
-        <%= link_to defit_path do %>
-          <p>2022</p>
+      <div class="project-display">
+      <%= link_to defit_path do %>
+        <%= image_tag "defit_homepage.png", class: "screenshot" %>
+        <p class="subtitle">Homegym Rental Service</p>
+        <p class="languages">HTML <span>|</span> SCSS <span>|</span> JS <span>|</span> Ruby <span>|</span> Rails</p>
         <% end %>
       </div>
-      <div class="table-row">
-        <%= link_to deepwork_path do %>
-          <p>Deepwork.</p>
-        <% end %>
-        <%= link_to deepwork_path do %>
-          <p>Web</p>
-        <% end %>
-        <%= link_to deepwork_path do %>
-          <p>2022</p>
-        <% end %>
-      </div>
-      <div class="table-row" id="left-tilt">
-        <%= link_to filmyj_path do %>
-          <p>filmy-j</p>
-        <% end %>
-        <%= link_to filmyj_path do %>
-          <p>Web</p>
-        <% end %>
-        <%= link_to filmyj_path do %>
-          <p>2022</p>
+      <div class="project-display">
+      <%= link_to avtechdaddy_path do %>
+        <%= image_tag "techdaddy_homepage.png", class: "screenshot" %>
+        <p class="subtitle">Operating Room Knowledgebase</p>
+        <p class="languages">HTML <span>|</span> SCSS <span>|</span> JS <span></p>
         <% end %>
       </div>
     </div>
