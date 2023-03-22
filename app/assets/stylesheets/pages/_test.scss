@@ -20,6 +20,23 @@
     }
     .summary {
       margin-top: 10px;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+    .icons {
+      margin-top: 0px;
+      display: flex;
+      a {
+        font-size: 22px;
+        color: $tan;
+        margin-right: 20px;
+        transition: .3s;
+        &:hover {
+          transition: .3s;
+          color: $sec-letters;
+        }
+      }
     }
   }
   .right-side {
