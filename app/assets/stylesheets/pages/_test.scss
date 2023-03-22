@@ -41,6 +41,15 @@
     }
   }
   .right-side {
-
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
+}
+
+.gallery-section {
+  margin-top: 100px;
+  height: 50vh; //temporary
+  border-top: 2px solid $tan;
+  border-bottom: 2px solid $tan;
 }
