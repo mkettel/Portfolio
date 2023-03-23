@@ -190,12 +190,17 @@
     .design-img {
       margin: 20px 0px 0px 0px;
     }
+    .design-button-defit {
+      background-color: transparent;
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+    }
     .design-img-button {
       background-color: $tan;
       padding: 20px;
       max-width: 400px;
       text-align: center;
-      margin-top: 0px;
     }
   }
 }

@@ -4,73 +4,73 @@
 
 <%= render "shared/project_nav" %>
 
-<%# Project Container %>
-<div class="p-container">
-  <div class="project-name">
-    <h1>Defit</h1>
-  </div>
-  <div class="p-content-container">
-    <div class="left-content">
-      <div class="project-content-profile" id="left-project">
-        <div class="table-title-profile">
-          <h5>TITLE</h5>
-          <h5>GENRE</h5>
-          <h5>YEAR</h5>
-        </div>
-        <div class="table-row-profile">
-          <p>Defit</p>
-          <p>Web</p>
-          <p>2022</p>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Our application, inspired by the Airbnb model, connects individuals who have home gyms with those who are seeking a gym space to train clients or workout on their own. Our platform makes it easy to find and book a convenient and private gym location, giving users the flexibility and versatility to meet their fitness needs.
-        </p>
-        <p>For this project, my role was to design and develop features for the application independently. I have been working on this project with my team from the start, and it is an ongoing effort.
-        </p>
-        <div class="site-links">
-          <a href="https://github.com/SkiltonJ/DeFit" target="_blank">Github Repository <i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
+<section class="top-section">
+  <div class="left-side">
+    <h2>Defit.</h2>
+    <div class="project-year">
+      <p>website</p>
+      <p>2022</p>
     </div>
-    <div class="right-content">
-      <div class="screenshot-homepage">
-        <%= image_tag "defit_homepage.png", class: "screenshot-homepage-image" %>
-      </div>
-      <div class="tools-used">
-        <%# <p>Languages:</p> %>
-        <p>HTML</p><span> ❘ </span>
-        <p>CSS</p><span> ❘ </span>
-        <p>JS</p><span> ❘ </span>
-        <p>Ruby</p><span> ❘ </span>
-        <p>Rails Framework</p>
-      </div>
+    <div class="summary">
+      <p>Defit connects individuals who have home gyms with those who are seeking a gym space to train clients or workout on their own. Our platform makes it easy to find and book a convenient and private gym location, giving users the flexibility and versatility to meet their fitness needs.</p>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/mkettel" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
-</div>
+  <div class="right-side">
+    <div class="homepage-image">
+        <%= image_tag "defit_homepage.png", class: "homepage-image" %>
+    </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery">
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "gym_index.png", class: "gallery-image" %></button>
+        <p class="subtitle">Gym Listings Index Page</p>
+    </div>
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "gym_page.png", class: "gallery-image" %></button>
+        <p class="subtitle">Selected Gym's Display / Booking Page</p>
+    </div>
+    <div class="gallery-image">
+        <button class="img-button"><%= image_tag "gym_page_bottom.png", class: "gallery-image" %></button>
+        <p class="subtitle">Booking Gym Form</p>
+    </div>
+  </div>
+</section>
 
-<div class="p-container">
-  <div class="second-section-content">
-    <div class="img-1">
-      <%= cl_video_tag("Screen_Recording_2022-12-12_at_9.34.56_AM_ypcn3j", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i",  :transformation=>[
-    {:width=>601, :crop=>"scale"}
-  ]) %>
-    </div>
-    <div class="explaination">
-      <h2>STRUCTURE</h2>
-      <p>Users can search and book gyms in their area, and gym owners can create and manage listings on the platform. Users can view all of their scheduled bookings and gym owners can view and manage booking requests on their profile pages. Users can filter their search by location, gym type, and other criteria, and gym owners can upload pictures and provide detailed descriptions of their facilities to attract potential users. This helps users find the right gym for their needs and allows gym owners to showcase and manage their business.
-      </p>
-    </div>
-  </div>
-
-  <%# Takeaway %>
-  <%# <div class="takeaway-container">
-    <h2>TAKEAWAY</h2>
-    <p>This project taught me the value of working in a team. Using project management and design tools like trello
-    and figma,
+<%# About Section %>
+<section class="about-project-section">
+  <div class="about-project-container">
+    <h3 class="project-topics">About Defit</h3>
+    <p>As a team of four, we set out to develop an innovative application based on the successful Airbnb business model. Our goal was to decentralize gym usage by creating a user-friendly platform that would allow fitness enthusiasts to rent out workout spaces to those in need. By leveraging our app, personal trainers, yoga instructors, and other fitness professionals could book unique sessions with their clients, offering them the chance to enjoy dynamic environments that keep them motivated and engaged. Ultimately, our solution empowers trainers to offer customized fitness experiences that transcend the traditional gym model.
     </p>
-  </div> %>
-</div>
+    <div class="language-icons">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-sass"></i>
+      <%= image_tag "ruby-on-rails-icon", class:"other-lang-icon" %>
+      <%= image_tag "ruby-programming-language-icon", class:"other-lang-icon" %>
+      <i class="fa-brands fa-square-js"></i>
+    </div>
+  </div>
+</section>
+
+<section class="design-section">
+  <div class="design-container">
+    <h3 class="project-topics">Design Elements</h3>
+    <p>My objective in designing this project was to achieve a minimalist style, complemented by neutral colors and punctuated by accents of purple and green. While the combination initially seemed unconventional, experimenting with different designs ultimately made us appreciate it more. Our aim was to create a contemporary space that feels both inspiring and inviting. Designing and constructing the profile pages for each gym, as well as the booking system, proved to be a delightful challenge.
+    </p>
+  </div>
+  <div class="design-components">
+    <div class="design-img"><%= image_tag "defit-colors.png" %></div>
+    <div class="design-img"><%= image_tag "deepwork-font.png" %></div>
+    <div class="design-button-defit"><%= image_tag "better-defit-button.png" %></div>
+  </div>
+</section>
+
 
 
 
@@ -80,10 +80,10 @@
   <div class="footer-content-2">
     <div class="back-link">
       <i class="fa-solid fa-arrow-left"></i>
-      <%= link_to "AVTECHDADDY", avtechdaddy_path, class: "project-link" %>
+      <%= link_to "Deepwork.", deepwork_path, class: "project-link" %>
     </div>
     <div class="forward-link">
-      <%= link_to "Deeepwork.", deepwork_path, class: "project-link" %>
+      <%= link_to "AVTECHDADDY", avtechdaddy_path, class: "project-link" %>
       <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
