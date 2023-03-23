@@ -1,0 +1,268 @@
+
+// // CSS FOR ALL OF THE PROJECT PAGES
+
+// // project introduction top
+// .top-section {
+//   max-width: 1200px;
+//   margin: auto;
+//   display: grid;
+//   grid-template-columns: .9fr 1.1fr;
+//   gap: 70px;
+//   padding: 40px 0px;
+//   .left-side {
+//     h2 {
+//       font-size: 62px;
+//       border-bottom: 2px solid $tan;
+//       padding: 0px 0px 10px 0px;
+//       font-weight: 500;
+//       font-family: $manrope;
+//     }
+//     .project-year {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//     .summary {
+//       margin-top: 10px;
+//       p {
+//         margin-bottom: 5px;
+//         font-size: 20px;
+//         line-height: 1.3;
+//       }
+//     }
+//     .icons {
+//       margin-top: 0px;
+//       display: flex;
+//       a {
+//         font-size: 26px;
+//         color: $tan;
+//         margin-right: 20px;
+//         transition: .3s;
+//         &:hover {
+//           transition: .3s;
+//           color: $sec-letters;
+//         }
+//       }
+//     }
+//   }
+//   .right-side {
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: center;
+//     .homepage-image {
+//       background-size: cover;
+//       height: 290px;
+//       width: 100%;
+//       border-radius: 0px;
+//     }
+//   }
+// }
+
+// // Main Gallery
+// .gallery-section {
+//   margin-top: 100px;
+//   // height: 50vh; //temporary
+//   .gallery {
+//     position: relative;
+//     border-top: 2px solid $tan;
+//     border-bottom: 2px solid $tan;
+//     padding: 50px 30px 0px 30px;
+//     max-width: 1200px;
+//     margin: auto;
+//     display: grid;
+//     grid-auto-columns: calc(75%);
+//     grid-auto-flow: column;
+//     grid-gap: 16px;
+//     overflow-x: auto;
+//     overflow: scroll;
+//     scrollbar-color: green blue;
+//     .subtitle {
+//       opacity: 0;
+//       transition: .3s;
+//       margin-bottom: 0px;
+//       padding-bottom: 0px;
+//       color: $tan;
+//       font-size: 18px;
+//     }
+//     .gallery-image {
+//       background-size: contain;
+//       height: 95%;
+//       width: 100%;
+//       border-radius: 0px;
+//       transition: .3s;
+//       cursor: pointer;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       &:hover {
+//         .subtitle {
+//           opacity: 1;
+//           transition: .3s;
+//           margin-bottom: 0px;
+//           padding-bottom: 0px;
+//         }
+//       }
+//       .img-button {
+//         background-color: transparent;
+//         border: none;
+//         transition: .3s;
+//         &:hover {
+//           transition: .3s;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// // about section
+// .about-project-section {
+//   margin-top: 100px;
+//   .about-project-container {
+//     max-width: 1200px;
+//     margin: auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     h3 {
+//       margin-bottom: 20px;
+//       font-size: 48px;
+//       font-family: $manrope;
+//       font-weight: 500;
+//     }
+//     p {
+//       text-align: center;
+//       font-size: 20px;
+//       font-weight: 300;
+//       max-width: 900px;
+//       line-height: 1.7;
+//     }
+//     .language-icons {
+//       max-width: 900px;
+//       margin-top: 20px;
+//       // border-bottom: 1px solid $tan;
+//       // border-top: 1px solid $tan;
+//       padding: 10px 50px;
+//       i {
+//         font-size: 72px;
+//         margin: 10px 25px;
+//       }
+//       .other-lang-icon {
+//         height: 70px;
+//         width: 70px;
+//         vertical-align: top;
+//         margin: 10px 25px;
+//       }
+//     }
+//   }
+// }
+
+// .design-section {
+//   margin-top: 100px;
+//   .design-container {
+//     max-width: 1200px;
+//     margin: auto;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     h3 {
+//       margin-bottom: 20px;
+//       font-size: 48px;
+//       font-family: $manrope;
+//       font-weight: 500;
+//     }
+//     p {
+//       text-align: center;
+//       font-size: 20px;
+//       font-weight: 300;
+//       max-width: 900px;
+//       line-height: 1.7;
+//     }
+//   }
+//   .design-components {
+//     max-width: 1000px;
+//     margin: auto;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     // gap: 70px;
+//     row-gap: 0px;
+//     column-gap: 70px;
+//     justify-content: center;
+//     align-items: center;
+//     .design-img {
+//       margin: 20px 0px 0px 0px;
+//     }
+//     .design-button-defit {
+//       background-color: transparent;
+//       padding: 20px;
+//       max-width: 400px;
+//       text-align: center;
+//     }
+//     .design-img-button {
+//       background-color: $tan;
+//       padding: 20px;
+//       max-width: 400px;
+//       text-align: center;
+//     }
+//   }
+// }
+
+
+// @media only screen and  (min-width: 200px) and (max-width: 700px) {
+//   .top-section {
+//     gap: 70px;
+//     padding: 40px 30px;
+//     display: flex;
+//     flex-direction: column;
+//     .right-side {
+//       display: flex;
+//       align-items: flex-end;
+//       justify-content: center;
+//       .homepage-image {
+//         background-size: cover;
+//         height: 210px;
+//         width: 100%;
+//         border-radius: 0px;
+//       }
+//     }
+//   }
+//   .gallery-section {
+//     margin-top: 20px;
+//   }
+//   .about-project-section {
+//     margin: 50px 30px 0px 30px;
+//     p {
+//       text-align: center;
+//     }
+//     .language-icons {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//     }
+//   }
+//   .design-section {
+//     margin: 50px 30px 0px 30px;
+//     h3 {
+//       text-align: center;
+//     }
+//     p {
+//       text-align: center;
+//     }
+//     .design-components {
+//       gap: 0px;
+//       display: flex;
+//       flex-direction: column;
+//       .design-img {
+//         margin: 20px 10px 0px 10px;
+//         img {
+//           width: 88%;
+//         }
+//       }
+//       .design-img-button {
+//         margin-top: 20px;
+//       }
+//     }
+//   }
+
+// }

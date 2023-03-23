@@ -1,77 +1,69 @@
 <%# loading animation %>
 <%= render "shared/preloader" %>
-<%# navbar %>
 <%= render "shared/project_nav" %>
 
-<%# Project Container %>
-<div class="p-container">
-  <div class="project-name">
-    <h1>AVTECHDADDY</h1>
-  </div>
-  <div class="p-content-container" data-controller="image">
-    <div class="left-content">
-      <div class="project-content-profile" id="left-project">
-        <div class="table-title-profile">
-          <h5>TITLE</h5>
-          <h5>GENRE</h5>
-          <h5>YEAR</h5>
-        </div>
-        <div class="table-row-profile">
-          <p>AVTECHDADDY</p>
-          <p>Web</p>
-          <p>2022</p>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>AVTECHDADDY was developed for Vail Health Hospital, a hospital located in Vail, Colorado, world-renowned for its expertise in orthopedics. The platform serves as a comprehensive resource for setting up and using the various technological equipment in the hospital's operating rooms. With doctors at the hospital using equipment from a range of different companies, ensuring proper setup can be a complex task. AVTECHDADDY was designed to streamline this process and provide a reliable, easy-to-use tool for hospital staff.
-        </p>
-        <div class="site-links">
-          <a href="https://github.com/mkettel/AV-TECHDADDY" target="_blank">Github Repository <i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
+<section class="top-section">
+  <div class="left-side">
+    <h2>AV TECHDADDY</h2>
+    <div class="project-year">
+      <p>website</p>
+      <p>2021</p>
     </div>
-    <div class="right-content">
-      <div class="screenshot-homepage image">
-        <%= image_tag "techdaddy_homepage.png", class: "screenshot-homepage-image" %>
-      </div>
-      <div class="tools-used">
-        <%# <p>Languages:</p> %>
-        <p>HTML</p><span> ❘ </span>
-        <p>CSS</p><span> ❘ </span>
-        <p>JS</p>
-      </div>
+    <div class="summary">
+      <p>The platform serves as a comprehensive resource for setting up and using the various technological equipment in the hospital's operating rooms. With doctors at the hospital using equipment from a range of different companies, ensuring proper setup can be a complex task. AV TECHDADDY was designed to streamline this process and provide a reliable, easy-to-use tool for hospital staff.</p>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/mkettel" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
-</div>
-
-<div class="p-container">
-  <div class="second-section-content">
-    <div class="img-1 image">
-      <%# <%= image_tag "techdaddy_vendors.png", class: "img-1" %>
-      <%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i", :transformation=>[
+  <div class="right-side">
+    <div class="homepage-image">
+        <%= image_tag "techdaddy_homepage.png", class: "homepage-image" %>
+    </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery">
+     <div class="gallery-image">
+        <button class="img-button"><%= cl_video_tag("Techdaddy_Site_Structure_yfe5yn", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i", :transformation=>[
     {:width=>601, :crop=>"scale"}
-  ]) %>
+  ]) %></button>
+        <p class="subtitle">Video Walkthrough</p>
     </div>
-    <div class="explaination">
-      <h2>STRUCTURE</h2>
-      <p>Users have the option to navigate through the site by scanning QR codes located in the operating rooms or by selecting from the following four main categories:
-        <ul>
-          <li><strong>Doctors:</strong> Provides information about the medical professionals who work in the operating rooms.</li>
-          <li><strong>Vendors:</strong> Lists the companies that supply the operating rooms with necessary products and services.</li>
-          <li><strong>Equipment: </strong>Details the various types of equipment used in the operating rooms.</li>
-          <li><strong>Settings/Other: </strong>Includes information about settings and any additional information that does not fit into the other categories.</li>
-        </ul>
-      </p>
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "doctor-page.png", class: "gallery-image" %></button>
+        <p class="subtitle">Searching by Doctor Page</p>
     </div>
   </div>
+</section>
 
-  <%# Takeaway %>
-  <div class="takeaway-container">
-    <h2>TAKEAWAY</h2>
-    <p>This project sparked my interest in becoming a developer and showed me the transformative power of technology. By using HTML and CSS, I developed a strong foundation in front-end development and learned how essential the design of a website or application is. I fell in love with CSS and am now eager to continue learning and growing my skills, particularly in JavaScript and back-end development. Working on this project showed me how I can use my skills to help others accomplish tasks they might not have known how to do otherwise.
+<%# About Section %>
+<section class="about-project-section">
+  <div class="about-project-container">
+    <h3 class="project-topics">About AV TECHDADDY</h3>
+    <p>While working in the hospital as an AV Tech, I consistently ran into problems with people understanding how to use the technical equipment within the operating rooms. I decided that the staff and my personal time will benifit from building a knowledge base to hold all of the information about this equipment that is used all day everyday. This was my first introduction into coding so I built it all with HTML, CSS, and Javascript. It was so much fun building it and working with my coworkers to get feedback on what they enjoyed and what needs to be improved.
+    </p>
+    <div class="language-icons">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-sass"></i>
+      <i class="fa-brands fa-square-js"></i>
+    </div>
+  </div>
+</section>
+
+<section class="design-section">
+  <div class="design-container">
+    <h3 class="project-topics">Project Structure</h3>
+    <p>My goal in developing this project was to create a user-friendly navigation system that would enable individuals to easily find solutions to technical issues, even if the technician was unavailable or busy. To accomplish this, I structured the site to allow users to search by Doctor, Company, or Equipment type, providing flexibility in how they approach their problem. By strategically placing QR codes and matching section IDs in the HTML, users can navigate to the correct sections and subsections with ease, effectively transferring my knowledge to them without my physical presence.
+    </p>
+    <p>Unfortunately, I was unable to continue selling the product as a service due to legal compliance issues stemming from my employment at the hospital. However, I am currently working on improving the application's functionality and hoping to revive the possibility of selling it to the hospital in the future. I really loved building this product and seeing how it helped the lives of my friends at the workplace. I am passionate about discovering new ideas and building products that are exciting to me and help those around me.
     </p>
   </div>
-</div>
+  <div class="design-components">
+
+  </div>
+</section>
 
 
 
@@ -81,10 +73,10 @@
   <div class="footer-content-2">
     <div class="back-link">
       <i class="fa-solid fa-arrow-left"></i>
-      <%= link_to "HOME", root_path, class: "project-link" %>
+      <%= link_to "Defit.", defit_path, class: "project-link" %>
     </div>
     <div class="forward-link">
-      <%= link_to "Defit.", defit_path, class: "project-link" %>
+      <%= link_to "Home", root_path, class: "project-link" %>
       <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
