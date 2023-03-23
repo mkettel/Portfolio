@@ -724,7 +724,15 @@ body {
     height: 20vh;
   }
 }
-
+.project-grid {
+  .project-display {
+    .screenshot {
+      background-size: cover;
+      height: 120px;
+      width: 100%;
+    }
+  }
+}
 
 
 // KEYFRAME ANIMATIONS

@@ -227,6 +227,10 @@
     p {
       text-align: center;
     }
+    .language-icons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
   }
   .design-section {
     margin: 50px 30px 0px 30px;
