@@ -1,75 +1,82 @@
 <%# Loader %>
 <%= render "shared/preloader" %>
 
-<%# Navbar %>
 <%= render "shared/project_nav" %>
 
-<%# Project Container %>
-<div class="p-container">
-  <div class="project-name">
-    <h1>Deepwork.</h1>
-  </div>
-  <div class="p-content-container">
-    <div class="left-content">
-      <div class="project-content-profile" id="left-project">
-        <div class="table-title-profile">
-          <h5>TITLE</h5>
-          <h5>GENRE</h5>
-          <h5>YEAR</h5>
-        </div>
-        <div class="table-row-profile">
-          <p>Deeepwork.</p>
-          <p>Web</p>
-          <p>2022</p>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>Deepwork is a productivity tool that helps people stay focused and increase their productivity by providing a structured environment for working on tasks. To use Deepwork, users can create an account and start a deepwork session. These sessions can be customized in terms of duration and can be used for studying or working on any subject. Deepwork helps users track the time they spend on a task and stay focused to get things done more efficiently.
-        </p>
-        <div class="site-links">
-          <a href="https://github.com/SkiltonJ/Deepwork." target="_blank">Github Repository <i class="fa-brands fa-github" id="icon"></i></a>
-          <br>
-          <a href="http://www.deepwork.pro/" target="_blank">Application Link <i class="fa-solid fa-arrow-turn-up" id="icon"></i></a>
-        </div>
-      </div>
+<section class="top-section">
+  <div class="left-side">
+    <h2>Deepwork.</h2>
+    <div class="project-year">
+      <p>website</p>
+      <p>2022</p>
     </div>
-    <div class="right-content">
-      <div class="screenshot-homepage">
-        <%= image_tag "deepwork.png", class: "screenshot-homepage-image" %>
-      </div>
-      <div class="tools-used">
-        <%# <p>Languages:</p> %>
-        <p>HTML</p><span> ❘ </span>
-        <p>CSS</p><span> ❘ </span>
-        <p>JS</p><span> ❘ </span>
-        <p>Ruby</p><span> ❘ </span>
-        <p>Rails Framework</p>
-      </div>
+    <div class="summary">
+      <p>Deepwork is a productivity tool that helps people stay focused and increase their productivity by providing a structured environment for working on tasks.  Deepwork helps users track the time they spend on a task and stay focused to get things done more efficiently.</p>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/mkettel" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
-</div>
+  <div class="right-side">
+    <div class="homepage-image">
+        <%= image_tag "deepwork.png", class: "homepage-image" %>
+    </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery">
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "stats-1-deepwork.png", class: "gallery-image" %></button>
+        <p class="subtitle">Check Your Total Minutes Focused</p>
+    </div>
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "stats-2-deepwork.png", class: "gallery-image" %></button>
+        <p class="subtitle">See Your Total Session Count</p>
+    </div>
+    <div class="gallery-image">
+        <button class="img-button"><%= image_tag "environments-deepwork.png", class: "gallery-image" %></button>
+        <p class="subtitle">Choose From the List of Custom Environments</p>
+    </div>
+    <div class="gallery-image">
+        <button class="img-button"><%= image_tag "intention.png", class: "gallery-image" %></button>
+        <p class="subtitle">Set Your Intention and Tie it to a Topic</p>
+    </div>
+    <div class="gallery-image">
+        <button class="img-button"><%= image_tag "during-session.png", class: "gallery-image" %></button>
+        <p class="subtitle">View During a Session</p>
+    </div>
+  </div>
+</section>
 
-<div class="p-container">
-  <div class="second-section-content">
-    <div class="img-1">
-      <%= image_tag "Deepwork_session.png", class: "img-1" %>
-    </div>
-    <div class="explaination">
-      <h2>STRUCTURE</h2>
-      <p>Deepwork has a profile page that acts as a dashboard for users to view their stats from previous sessions and select their desired study templates for upcoming deepwork sessions. Users will soon be able to add friends and start group sessions or chat with them about various subjects. The profile page provides a convenient place for users to access all of their information and manage their deepwork sessions.
-      </p>
-    </div>
-  </div>
-
-  <%# Takeaway %>
-  <%# <div class="takeaway-container">
-    <h2>TAKEAWAY</h2>
-    <p>This project taught me the value of working in a team. Using project management and design tools like trello
-    and figma,
+<%# About Section %>
+<section class="about-project-section">
+  <div class="about-project-container">
+    <h3 class="project-topics">About Deepwork.</h3>
+    <p>Deepwork. was built to help give myself and my friends a go-to study environment that allows the user to stay focused for a specific period of time. We incorporated tools like timers, custom backgrounds, and stats so the user can keep track of the progress they are putting in towards acheiving their goals. It was a very fun project to get to work on the different tools that can be combined together to give the best experience possible for the user.
     </p>
-  </div> %>
-</div>
+    <div class="language-icons">
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-sass"></i>
+      <%= image_tag "ruby-on-rails-icon", class:"other-lang-icon" %>
+      <%= image_tag "ruby-programming-language-icon", class:"other-lang-icon" %>
+      <i class="fa-brands fa-square-js"></i>
+    </div>
+  </div>
+</section>
 
+<section class="design-section">
+  <div class="design-container">
+    <h3 class="project-topics">Design Elements</h3>
+    <p>My goal for designing this project was to use a minimalistic style, combined with neutral colors to build a space that feels intellectual yet comfortable. Designing and building the profile page was a fun challenge. Building a dashboard that is easy to navigate and shows all the relevent infomation meant we had to use a tab system. It was a fun deep dive into psuedo-elements using ::before and the ::after to create the curved edges on the tab system.
+    </p>
+  </div>
+  <div class="design-components">
+    <div class="design-img"><%= image_tag "deepwork-colors.png" %></div>
+    <div class="design-img"><%= image_tag "deepwork-font.png" %></div>
+    <div class="design-img-button"><%= image_tag "button-deepwork.png" %></div>
+  </div>
+</section>
 
 
 
