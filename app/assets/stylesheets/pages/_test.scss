@@ -135,6 +135,23 @@
       max-width: 900px;
       line-height: 1.7;
     }
+    .language-icons {
+      max-width: 900px;
+      margin-top: 20px;
+      // border-bottom: 1px solid $tan;
+      // border-top: 1px solid $tan;
+      padding: 10px 50px;
+      i {
+        font-size: 72px;
+        margin: 10px 25px;
+      }
+      .other-lang-icon {
+        height: 70px;
+        width: 70px;
+        vertical-align: top;
+        margin: 10px 25px;
+      }
+    }
   }
 }
 
@@ -165,11 +182,20 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 70px;
+    // gap: 70px;
+    row-gap: 0px;
+    column-gap: 70px;
     justify-content: center;
     align-items: center;
     .design-img {
       margin: 20px 0px 0px 0px;
+    }
+    .design-img-button {
+      background-color: $tan;
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+      margin-top: 0px;
     }
   }
 }
