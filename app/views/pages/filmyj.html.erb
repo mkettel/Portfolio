@@ -4,73 +4,63 @@
 
 <%= render "shared/project_nav" %>
 
-<%# Project Container %>
-<div class="p-container">
-  <div class="project-name">
-    <h1>filmy-j</h1>
-  </div>
-  <div class="p-content-container">
-    <div class="left-content">
-      <div class="project-content-profile" id="left-project">
-        <div class="table-title-profile">
-          <h5>TITLE</h5>
-          <h5>GENRE</h5>
-          <h5>YEAR</h5>
-        </div>
-        <div class="table-row-profile">
-          <p>filmy-j</p>
-          <p>Web</p>
-          <p>2022</p>
-        </div>
-      </div>
-      <div class="project-description">
-        <p>This is an ongoing project application that supports film photographers who are looking to improve their skills and understand their camera better by keeping track of camera settings for each frame taken. Then when the film is developed, the user can upload the corresponding photo and have a log to learn from for future rolls.
-        </p>
-        <p>I built all aspects of this application and it has been a fun project for something I am passionate about.
-        </p>
-        <div class="site-links">
-          <a href="https://github.com/mkettel/filmy" target="_blank">Github Repository <i class="fa-brands fa-github"></i></a>
-        </div>
-      </div>
+<section class="top-section">
+  <div class="left-side">
+    <h2>filmy-j</h2>
+    <div class="project-year">
+      <p>website</p>
+      <p>2022</p>
     </div>
-    <div class="right-content">
-      <div class="screenshot-homepage">
-        <%= image_tag "filmyj_homepage.png", class: "screenshot-homepage-image" %>
-      </div>
-      <div class="tools-used">
-        <%# <p>Languages:</p> %>
-        <p>HTML</p><span> ❘ </span>
-        <p>CSS</p><span> ❘ </span>
-        <p>JS</p><span> ❘ </span>
-        <p>Ruby</p><span> ❘ </span>
-        <p>Rails Framework</p>
-      </div>
+    <div class="summary">
+      <p>Film Journal application made to help film photographers learn and understand their cameras by being able to keep track of camera settings by frame for each roll prior to being developed. </p>
+    </div>
+    <div class="icons">
+      <a href="https://github.com/mkettel" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
-</div>
+  <div class="right-side">
+    <div class="homepage-image">
+        <%= image_tag "filmy-homepage.png", class: "homepage-image" %>
+    </div>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery">
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "camera-selection.png", class: "gallery-image" %></button>
+        <p class="subtitle">Select or Add Your Cameras</p>
+    </div>
+     <div class="gallery-image">
+        <button class="img-button"><%= image_tag "film-selection.png", class: "gallery-image" %></button>
+        <p class="subtitle">Select or Add Film Rolls</p>
+    </div>
+    <div class="gallery-image">
+        <button class="img-button"><%= image_tag "film-gallery.png", class: "gallery-image" %></button>
+        <p class="subtitle">Add Frames for the Selected Roll</p>
+    </div>
+  </div>
+</section>
 
-<div class="p-container">
-  <div class="second-section-content">
-    <div class="img-1" alt="under construction">
-      <%# <%= cl_video_tag("Screen_Recording_2022-12-12_at_9.34.56_AM_ypcn3j", autoplayMode: "on-scroll", :controls=>true, :loop=>true, :cloud_name=> "dwdfhpp4i",  :transformation=>[
-    {:width=>601, :crop=>"scale"}
-  ]) %>
-    </div>
-    <div class="explaination">
-      <h2>UNDER CONSTRUCTION   🛠</h2>
-      <p>
-      </p>
-    </div>
+<%# About Section %>
+<section class="about-project-section">
+  <div class="about-project-container">
+    <h3 class="project-topics">About filmy-j</h3>
+    <p>Filmy-j is built to solve a problem that I personally faced as a film photographer. I was having trouble learning how to take better film photos and after each roll would come back with some really disappointing frames, I decided that it would be nice to have an application for me to be able to track the shutter speed, aperature and any other setting for each photo that is taken. This way I would be able to learn from my mistakes and become a better photographer.</p>
   </div>
+</section>
 
-  <%# Takeaway %>
-  <%# <div class="takeaway-container">
-    <h2>TAKEAWAY</h2>
-    <p>This project taught me the value of working in a team. Using project management and design tools like trello
-    and figma,
+<section class="design-section">
+  <div class="design-container">
+    <h3 class="project-topics">Design Elements</h3>
+    <p>My goal for filmy-j was to have a semi-dark theme. Make it feel somewhat like an old style film camera as well. It took quite awhile to choose the colors that felt good to me and had a lot of playing around on Figma prior to starting the design of the landing page. Finally, I decided my typography font styles and the color palette and got to building.
     </p>
-  </div> %>
-</div>
+  </div>
+  <div class="design-components">
+    <div class="design-img"><%= image_tag "filmy-color-pallet.png" %></div>
+    <div class="design-img"><%= image_tag "font-group.png" %></div>
+  </div>
+</section>
 
 
 
@@ -80,10 +70,10 @@
   <div class="footer-content-2">
     <div class="back-link">
       <i class="fa-solid fa-arrow-left"></i>
-      <%= link_to "Deepwork.", deepwork_path, class: "project-link" %>
+      <%= link_to "HOME", root_path, class: "project-link" %>
     </div>
     <div class="forward-link">
-      <%= link_to "HOME", root_path, class: "project-link" %>
+      <%= link_to "Deepwork.", deepwork_path, class: "project-link" %>
       <i class="fa-solid fa-arrow-right"></i>
     </div>
   </div>
