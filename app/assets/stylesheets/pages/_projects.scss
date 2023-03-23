@@ -147,12 +147,26 @@
       i {
         font-size: 72px;
         margin: 10px 25px;
+        transition: .3s;
+        &:hover {
+          color: $sec-letters;
+          transition: .3s;
+          cursor: pointer;
+
+        }
       }
       .other-lang-icon {
         height: 70px;
         width: 70px;
         vertical-align: top;
         margin: 10px 25px;
+        transition: .3s;
+        &:hover {
+          color: $sec-letters;
+          transform: rotate(5deg);
+          transition: .3s;
+          cursor: pointer;
+        }
       }
     }
   }
