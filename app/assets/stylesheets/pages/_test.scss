@@ -173,3 +173,54 @@
     }
   }
 }
+
+
+@media only screen and  (min-width: 200px) and (max-width: 700px) {
+  .top-section {
+    gap: 70px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    .right-side {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .homepage-image {
+        background-size: cover;
+        height: 210px;
+        width: 100%;
+        border-radius: 0px;
+      }
+    }
+  }
+  .gallery-section {
+    margin-top: 20px;
+  }
+  .about-project-section {
+    margin: 50px 30px 0px 30px;
+    p {
+      text-align: center;
+    }
+  }
+  .design-section {
+    margin: 50px 30px 0px 30px;
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .design-components {
+      gap: 0px;
+      display: flex;
+      flex-direction: column;
+      .design-img {
+        margin: 20px 10px 0px 10px;
+        img {
+          width: 88%;
+        }
+      }
+    }
+  }
+
+}
