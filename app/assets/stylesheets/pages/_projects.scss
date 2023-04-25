@@ -32,6 +32,7 @@
     .icons {
       margin-top: 0px;
       display: flex;
+      align-items: center;
       a {
         font-size: 26px;
         color: $tan;
@@ -40,6 +41,16 @@
         &:hover {
           transition: .3s;
           color: $sec-letters;
+        }
+      }
+      p {
+        margin: 0px;
+        transition: .3s;
+
+        &:hover {
+          cursor: pointer;
+          transition: .3s;
+          transform: scale(1.05) rotate(-5deg);
         }
       }
     }
