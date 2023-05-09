@@ -20,6 +20,7 @@
     .project-year {
       display: flex;
       justify-content: space-between;
+      color: $rad-red;
     }
     .summary {
       margin-top: 10px;
@@ -33,6 +34,7 @@
       margin-top: 0px;
       display: flex;
       align-items: center;
+      position: relative;
       a {
         font-size: 26px;
         color: $tan;
@@ -40,7 +42,7 @@
         transition: .3s;
         &:hover {
           transition: .3s;
-          color: $sec-letters;
+          color: $rad-red;
         }
       }
       p {
@@ -64,6 +66,7 @@
       height: 290px;
       width: 100%;
       border-radius: 0px;
+      object-fit: contain;
     }
   }
 }
@@ -162,6 +165,7 @@
         transition: .3s;
         &:hover {
           color: $sec-letters;
+          color: $rad-red;
           transition: .3s;
           cursor: pointer;
 
@@ -231,6 +235,27 @@
       padding: 20px;
       max-width: 400px;
       text-align: center;
+    }
+  }
+  // For Code Components
+  .design-components-code {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // gap: 70px;
+    row-gap: 0px;
+    column-gap: 70px;
+    justify-content: start;
+    align-items: flex-start;
+    .explaination {
+      margin-top: 15px;
+      p {
+        font-size: 20px;
+      }
+    }
+    code {
+      color: $rad-red;
     }
   }
 }
