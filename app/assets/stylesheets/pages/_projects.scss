@@ -20,6 +20,7 @@
     .project-year {
       display: flex;
       justify-content: space-between;
+      color: $rad-red;
     }
     .summary {
       margin-top: 10px;
@@ -40,7 +41,7 @@
         transition: .3s;
         &:hover {
           transition: .3s;
-          color: $sec-letters;
+          color: $rad-red;
         }
       }
       p {
@@ -163,6 +164,7 @@
         transition: .3s;
         &:hover {
           color: $sec-letters;
+          color: $rad-red;
           transition: .3s;
           cursor: pointer;
 
