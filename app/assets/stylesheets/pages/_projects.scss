@@ -34,6 +34,7 @@
       margin-top: 0px;
       display: flex;
       align-items: center;
+      position: relative;
       a {
         font-size: 26px;
         color: $tan;
@@ -234,6 +235,27 @@
       padding: 20px;
       max-width: 400px;
       text-align: center;
+    }
+  }
+  // For Code Components
+  .design-components-code {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // gap: 70px;
+    row-gap: 0px;
+    column-gap: 70px;
+    justify-content: start;
+    align-items: flex-start;
+    .explaination {
+      margin-top: 15px;
+      p {
+        font-size: 20px;
+      }
+    }
+    code {
+      color: $rad-red;
     }
   }
 }

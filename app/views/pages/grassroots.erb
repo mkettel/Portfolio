@@ -16,7 +16,7 @@
        </p>
     </div>
     <div class="icons">
-      <a href="https://github.com/mkettel/filmy" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://github.com/mkettel" target="_blank" id="private-repo"><i class="fa-brands fa-github"></i></a>
       <a href="https://artist-operations.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
   </div>
@@ -44,7 +44,7 @@
 <section class="about-project-section">
   <div class="about-project-container">
     <h3 class="project-topics">About Grassroots</h3>
-    <p>I was brought on the design and develop the current and first version of the application. I utilized classic HTML, CSS, and Javascript to leave space for deciding a framework to use for the full application after doing user testing.
+    <p>The project scope was fairly strightforward. I was tasked to create a page that would allow users to login with their Spotify account, and then display their top artists in a grid. The grid would have a resize effect that would allow the user to see more information about the artist when they hover over the image. With this feature in place that would allow for testing on users before implementing future features.
     </p>
     <div class="language-icons">
       <i class="fa-brands fa-html5"></i>
@@ -57,12 +57,54 @@
 <section class="design-section">
   <div class="design-container">
     <h3 class="project-topics">Page Elements</h3>
-    <p>The project scope was fairly strightforward. I was tasked to create a page that would allow users to login with their Spotify account, and then display their top artists in a grid. The grid would have a resize effect that would allow the user to see more information about the artist when they hover over the image. With this feature in place that would allow for testing on users before implementing future features.
-    </p>
+
   </div>
-  <div class="design-components">
-    <div class="design-img"><%= image_tag "filmy-color-pallet.png" %></div>
-    <div class="design-img"><%= image_tag "font-group.png" %></div>
+  <div class="design-components-code">
+    <div class="explaination">
+      <p>
+    Most of the elements were standard but the one element that was fun to build and play with was the grid system for displaying the users top artists. For this I wanted the grid element to be able to expand when the user hovers or taps the artists picture while the others respond by shrinking respectively.
+    </p>
+    <p>I started by defining some variables to use for the grid. Then on hover the height and width would adjust based on the scale factor for the element hovered and the others would adjust accordingly.</p>
+    <p>I set the width and height of each cell to 0. This allows the images to grow based on the size of the grid itself. This way, when we scale while a cell is hovered, the hovered element will grow while the others will shrink to keep the grid size the same.</p>
+    <p>It was a very fun exercise and a good learning experience to see what all is possible using just CSS and HTML.</p>
+    </div>
+    <div class="code-snip">
+      <pre>
+        <code>
+          /* -- Using the grid scale effect -- */
+          .topArtists__artist {
+
+            --n: 2; /* number of rows*/
+            --m: 5; /* number of columns */
+            --g: 10px;  /* control the gap */
+            --f: .4;   /* control the scale factor */
+
+            display: grid;
+            gap: var(--g);
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: repeat(var(--m),auto);
+          }
+          .topArtists__card {
+            position: relative;
+            width: 0;
+            height: 0;
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            filter: grayscale(80%);
+            transition: .35s linear;
+          }
+          .topArtists__card:hover {
+            filter: grayscale(0);
+            width:  calc(100vh*var(--f)/var(--n));
+            height: calc(100vw*var(--f)/var(--m));
+          }
+        </code>
+      </pre>
+
+    </div>
   </div>
 </section>
 
